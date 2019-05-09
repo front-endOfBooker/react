@@ -89,8 +89,10 @@ a {
 
 .todo-footer .footer-box > span {
   float: left;
+  font-size: 12px;
 }
 
 .todo-footer .footer-box > a {
   float: right;
+  font-size: 12px;
 }

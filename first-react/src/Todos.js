@@ -68,8 +68,11 @@ class TodosFooter extends React.Component {
       return (
         <div className="todo-footer">
           <div className="footer-box">
-            <span>{this.props.doneNum}</span>
-            <a href="javascript:;" onClick={this.props.clearAllDone}>{this.props.leftNum}</a>
+            <span>{this.props.leftNum ? `left ${this.props.leftNum} ${this.props.leftNum == 1 ? 'item' : 'items'}` : ''}</span>
+            <a href="javascript:;" 
+            onClick={this.props.clearAllDone}>
+              {this.props.doneNum ? `clear ${this.props.doneNum} completed ${this.props.doneNum == 1 ? 'item' : 'items'} ` : ''}
+            </a>
           </div>
         </div>
       )
@@ -164,7 +167,12 @@ class Todos extends React.Component {
   }
   // 清除所有已完成
   clearAllDone() {
-    console.log('booker')
+    let todosList = this.state.todosList.filter((todo) => {
+      return !todo.done
+    })
+    this.setState({
+      todosList: todosList
+    })
   }
   render() {
     return (
