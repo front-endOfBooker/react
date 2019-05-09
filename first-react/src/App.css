@@ -1,0 +1,97 @@
+
+* {
+  list-style: none;
+  box-sizing: border-box;
+}
+
+.squares {
+  width: 40px;
+  height: 40px;
+  border: 0.5px solid #c0c0c0;
+  
+  background-color: #fff;
+  cursor: pointer;
+  padding: 0;
+  float: right;
+}
+
+.row {
+  width: 120px;
+  height: 40px;
+}
+
+.all-row {
+  width: 120px;
+  height: 120px;
+  border: 0.5px solid #c0c0c0;
+}
+
+.game-box {
+  height: 200px;
+  width: 200px;
+  margin: 200px auto;
+}
+
+.fl-r {
+  float: right;
+}
+
+.del-logo {
+  font-size: 18px;
+  transform: scale(0.5);
+  cursor: pointer;
+  position: absolute;
+  top: 7px;
+  right: 10px;
+}
+
+.box {
+  width: 100%;
+  background-color: #f0f0f0;
+  padding: 20px;
+}
+
+.todo-input {
+  width: 100%;
+  padding: 0 10px;
+  height: 50px;
+  line-height: 50px;
+  border-radius: 4px;
+}
+
+.todo-box {
+  width: 100%;
+}
+
+.todo-box > ul {
+  padding: 0 10px;
+  width: 100%;
+  border-radius: 4px;
+}
+
+.todo-box > ul > li {
+  width: 100%;
+  background-color: #fefefe;
+  padding: 5px 0 5px 10px;
+  min-height: 40px;
+  position: relative;
+}
+
+.todo-box > ul .todo-content {
+  display: inline-block;
+  width: 100%;
+  padding-right: 120px;
+  line-height: 30px;
+}
+
+.todo-box > ul > li:not(:last-of-type) .todo-content {
+  border-bottom: dotted 1px #f0f0f0;
+}
+
+#todoTimes {
+  font-size: 12px;
+  color: #b0b0b0;
+  position: absolute;
+  top: 12px;
+  right: 10px;
+}
